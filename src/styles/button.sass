@@ -1,0 +1,59 @@
+.button
+    position: relative
+    display: inline-block
+    padding: 24px 30px
+    font-size: 16px
+    color: $primaryGray
+    border: none
+    will-change: transform, opacity
+    transform: translateZ(0)
+    transition: transform .4s ease, opacity 3s ease
+    backface-visibility: hidden
+    &:disabled
+        opacity: .4
+        pointer-events: none
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        bottom: 0
+        width: 100%
+        border-radius: 40px
+        background-color: $primaryPink
+        transform: translateX(-50%)
+        will-change: width
+        transition: width .5s ease
+        z-index: -1
+    &_rise
+        box-shadow: 0 0 0 0 rgba($primaryPink, 0)
+        border-radius: 50%
+        will-change: box-shadow, transform
+        transition: box-shadow .3s ease, transform .3s ease
+        &:hover
+            transform: translateY(-14px)
+            box-shadow: 0 8px 22px 10px rgba($primaryPink, 0.3)
+            &:after
+                width: 144%
+                background-color: $primaryPink_darken
+                box-shadow: 0 0 17px 3px rgba($primaryPink, .36)
+    &_glow
+        will-change: box-shadow
+        transition: box-shadow .3s ease
+        box-shadow: 0 0 0 0 rgba($primaryPink, 0)
+        border-radius: 50%
+        &:hover
+            box-shadow: 0 8px 22px 10px rgba($primaryPink, 0.3)
+            background-color: #c9005a
+            border-color: #c9005a
+    &_light
+        &:after
+            border: 2px solid rgba($primaryBlue, .58)
+            background-color: transparent
+        &:hover
+            &:after
+                width: 112%
+                background-color: rgba($primaryGray, .2)
+                box-shadow: none
+    &_form
+        padding: 24px 40px

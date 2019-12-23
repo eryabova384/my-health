@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=no">
+        <meta name="title" content="Моё здоровье. Электронный дневник пациента">
+        <meta name="copyright" content="© 2019 Redsoft">
+        <meta name="description" content="Моё здоровье - ваш личный электронный дневник пациента. Общайтесь со своим лечащим врачом онлайн в любое время бесплатно, без смс и регистрации.">
+        <title>Моё здоровье. Электронный дневник пациента</title>
+        <meta property="og:type" content="website">
+        <meta name="apple-mobile-web-app-title" content="Моё здоровье. Электронный дневник пациента">
+        <meta name="application-name" content="Моё здоровье. Электронный дневник пациента">
+        <link rel="apple-touch-icon" sizes="180x180" href="meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="meta/favicon-16x16.png">
+        <link rel="manifest" href="meta/site.webmanifest">
+        <link rel="mask-icon" href="meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="../dist/index.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a class="logo header__logo" href="javascript:void(0);" title='Логотип проекта «Моё здоровье»'>
+                        <img src="img/logo_header.png" alt="">
+                    </a>
+                    <nav class="navigation">
+                        <a class="navigation__item" href="javascript:void(0);">О&nbsp;сервисе</a>
+                        <a class="navigation__item" href="javascript:void(0);">Функции</a>
+                        <a class="navigation__item" href="javascript:void(0);">Возможности</a>
+                        <a class="navigation__item" href="javascript:void(0);">Партнёры</a>
+                    </nav>
+                    <button class="button button_light" data-button>Оставить заявку</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container container_fluid">
+                <div class="carousel__img">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="carousel__item swiper-slide">
+                                <img src="img/carousel__item-bg_1.jpg" alt="">
+                            </div>
+                            <div class="carousel__item swiper-slide">
+                                <img src="img/carousel__item-bg_2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="carousel__description">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="carousel__item swiper-slide">
+                                <div class="carousel__info">
+                                    <h2 class="title title_light">Расширяем возможности предоставления качественных медицинских услуг</h2>
+                                    <p class="carousel__text">&laquo;Дневник здоровья&raquo;&nbsp;&mdash; новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы &laquo;Моё здоровье&raquo;.</p>
+                                    <button class="button button_rise" data-button>Узнать больше</button>
+                                </div>
+                            </div>
+                            <div class="carousel__item swiper-slide">
+                                <div class="carousel__info">
+                                    <h2 class="title title_light">Следить за&nbsp;здоровьем станет проще</h2>
+                                    <p class="carousel__text">Скоро вы&nbsp;сможете находиться на&nbsp;связи со&nbsp;своим лечащим врачом независимо от&nbsp;своего местоположения, вести дневник мониторинга самочувствия, получать рекомендации по&nbsp;плану лечения и&nbsp;многое другое.</p>
+                                    <button class="button button_rise" data-button>Узнать больше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="about">
+                <div class="container">
+                    <div class="about__item">
+                        <div class="about__poster">
+                            <img src="img/phone-poster.png" alt="">
+                        </div>
+                        <div class="about__caption">
+                            <h1 class="title">Что такое &laquo;Дневник здоровья&raquo;?</h1>
+                            <span class="about__text">Дневник пациента&nbsp;&mdash; это удобный онлайн-сервис:</span>
+                            <ul class="list">
+                                <li class="list__item"><span>Вносите результаты измерений вручную или с&nbsp;помощью интегрированных приборов</span></li>
+                                <li class="list__item"><span>Ведите персональную медицинскую карту с&nbsp;историей ваших измерений</span></li>
+                                <li class="list__item"><span>Делитесь результатами измерений со&nbsp;специалистами для повышения эффективности лечения</span></li>
+                                <li class="list__item"><span>Получайте рекомендации, созданные специально для вас</span></li>
+                            </ul>
+                            <button class="button button_glow" data-button>Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <article class="subscribe-form">
+                <div class="container">
+                    <div class="subscribe-form__caption">
+                        <h3 class="title">Получите бесплатный доступ к&nbsp;&laquo;Дневнику здоровья&raquo;</h3>
+                        <span class="subscribe-form__text">Оставьте свою электронную почту<br>и&nbsp;вы&nbsp;узнаете о&nbsp;запуске данного сервиса первым!</span>
+                    </div>
+                    <form class="form" action="/" method="post" novalidate>
+                        <fieldset class="form__group">
+                            <input class="form__input" type="email" name="Subscribe[email]" placeholder="Ваш Email" required autocomplete="off">
+                            <button class="button button_form button_glow" type="submit">Отправить</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a class="logo footer__logo" href="javascript:void(0);" title='Логотип проекта «Моё здоровье»'>
+                        <picture>
+                            <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="">
+                        </picture>
+                    </a>
+                    <nav class="navigation">
+                        <a class="navigation__item" href="javascript:void(0);">О&nbsp;сервисе</a>
+                        <a class="navigation__item" href="javascript:void(0);">Функции</a>
+                        <a class="navigation__item" href="javascript:void(0);">Возможности</a>
+                        <a class="navigation__item" href="javascript:void(0);">Партнёры</a>
+                    </nav>
+                    <a class="navigation__item" href="tel:+78005004549">88005004549</a>
+                </div>
+                <div class="footer__copyright copyright">
+                    <span class="copyright__text">Разработка сайта <span>Redsoft</span></span>
+                </div>
+            </div>
+        </footer>
+        <script src='../dist/index.js'></script>
+    </body>
+</html>

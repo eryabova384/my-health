@@ -1,0 +1,52 @@
+.carousel
+    &__img
+        position: relative
+        width: 1920px
+        margin: -90px auto 0
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 0
+        &:before
+            content: url('../web/img/bottom-layer_right.svg')
+            right: 0
+        &:after
+            content: url('../web/img/bottom-layer_left.svg')
+            left: 0
+        &:after, &:before
+            position: absolute
+            bottom: 0
+            pointer-events: none
+            z-index: 5
+        .swiper-container
+            &:before
+                content: url("../web/img/carousel-layer.png")
+                position: absolute
+                width: 100%
+                top: 0
+                left: 0
+                bottom: 0
+                z-index: 2
+    &__description
+        position: absolute
+        width: 100%
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    &__item
+        position: relative
+    &__poster
+        position: relative
+    &__info
+        width: 1920px
+        max-width: 760px
+        margin: 0 auto
+        color: $primaryGray
+        text-align: center
+        z-index: 2
+    &__text
+        margin: 0 auto 30px
+        font-size: 24px
+    &__clip
+        position: absolute
+        bottom: 0
+        width: 100%

@@ -1,0 +1,43 @@
+{
+  "name": "my-health",
+  "version": "1.0.0",
+  "description": "Test task for Redsoft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eryabova384/my-health.git"
+  },
+  "author": "Yekaterina Ryabova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eryabova384/my-health/issues"
+  },
+  "homepage": "https://github.com/eryabova384/my-health#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "extract-loader": "^3.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-cli": "^6.1.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.1",
+    "swiper": "^5.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "file-loader": "^5.0.2"
+  }
+}

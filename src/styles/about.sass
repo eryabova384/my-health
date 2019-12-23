@@ -1,0 +1,41 @@
+.about
+    position: relative
+    width: 1920px
+    padding: 100px 0
+    left: 50%
+    transform: translateX(-50%)
+    background-color: $aboutLightBlue
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0px
+        right: -190px
+        display: inline-block
+        width: 100%
+        max-width: 480px
+        height: 300px
+        background-image: url('../web/img/about__diagram.png')
+    &:before
+        content: url("../web/img/diary-layer.png");
+        position: absolute
+        display: inline-block
+        top: -30px
+        left: -7px
+        width: 935px
+        height: 560px
+        pointer-events: none
+        z-index: 1
+    &__item
+        display: flex
+        width: 100%
+        max-width: 1000px
+        margin: 0 auto
+        align-items: center
+        justify-content: space-between
+    &__caption
+        font-size: 16px
+        color: $primaryBlue
+    &__poster
+        width: 100%
+        max-width: 300px
+        z-index: 2

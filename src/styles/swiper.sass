@@ -1,0 +1,35 @@
+@import '../../node_modules/swiper/css/swiper.min.css'
+
+.swiper
+    &-container-horizontal
+        > .swiper-pagination-bullets
+            left: auto
+            right: 50%
+            bottom: 40px
+            display: inline-block
+            width: 70px
+            border: thin solid $carouselBlue_darken
+            border-radius: 12px
+            font-size: 0
+            transform: translateX(50%)
+            cursor: pointer
+            .swiper-pagination-bullet
+                position: relative
+                width: 50%
+                height: 15px
+                margin: 0
+                background: transparent
+                opacity: 1
+                &:after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    display: inline-block
+                    width: 16px
+                    height: 1px
+                    background: $carouselBlue_darken
+                    transform: translate(-50%, -50%)
+                &-active
+                    &:after
+                        background: $carouselBlue

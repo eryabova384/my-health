@@ -1,0 +1,25 @@
+.navigation
+    display: flex
+    &__item
+        position: relative
+        display: inline-block
+        margin: 0 50px 0 0
+        font-weight: 700
+        color: $primaryGray
+        text-decoration: none
+        &:after
+            content: ''
+            position: absolute
+            top: 120%
+            left: 50%
+            display: block
+            width: 4px
+            height: 4px
+            opacity: 0
+            border-radius: 50%
+            background-color: $primaryGray
+            will-change: opacity
+            transition: opacity .3s ease
+        &:hover
+            &:after
+                opacity: 1

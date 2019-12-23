@@ -1,0 +1,27 @@
+.form
+    position: relative
+    &__input
+        width: 100%
+        max-width: 360px
+        margin: 0 40px 0 0
+        padding: 22px 25px
+        border: thin solid $primaryBlue
+        border-radius: 34px
+        color: $primaryBlue
+        will-change: opacity
+        transition: opacity .3s ease
+        &:disabled
+            opacity: 0.4
+    &__error,
+    &__success
+        position: absolute
+        top: 115%
+        left: 50%
+        font-size: 12px
+        font-style: normal
+        transform: translateX(-50%)
+    &__error
+        color: $primaryPink
+    &__success
+        color: $primaryBlue
+
