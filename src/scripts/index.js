@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
         form = document.querySelector('.subscribe-form'),
         carouselImg = new Swiper('.carousel__img .swiper-container', {
             speed: 400,
-            // autoplay: {
-            //     delay: 5000,
-            // },
+            autoplay: {
+                delay: 5000,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
